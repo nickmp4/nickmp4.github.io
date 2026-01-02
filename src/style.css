@@ -1,3 +1,21 @@
+* {
+    cursor: none;
+}
+
+body {
+    background-image: url("../resources/background.png");
+}
+
+.cursor{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    z-index: 9999;
+    background-image: url("../resources/cursor.png");
+    pointer-events: none;
+    cursor: none;
+}
+
 .channel-container {
     margin-top: 2rem;
     display: flex;
@@ -8,10 +26,12 @@
     padding-right: 4rem;
     width: 90%;
     height: 70%;
+    cursor: none;
 }
 
 .channel-icon {
     aspect-ratio: 16/9;
+    cursor: none;
 }
 
 .channel-image {
@@ -22,8 +42,8 @@
     height: auto;
     aspect-ratio: 16/9;
     overflow: hidden;
-    border: .25rem solid gray;
-    
+    border: .2rem solid gray;
+    cursor: none;
 }
 
 .info-bar {
@@ -35,9 +55,11 @@
     background-color: #bbbbbb; 
     padding: 10px;  
     z-index: 1000;
+    cursor: none;
 }
 
 .channel-image:hover {
     border-radius: 15px;
-    border: .25rem solid #3bc0f4;
+    border: .2rem solid #3bc0f4;
+    cursor: none;
 }
