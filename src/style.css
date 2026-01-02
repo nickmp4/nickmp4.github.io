@@ -38,7 +38,7 @@ body {
     border-radius: 15px;
     margin-top: .75rem;
     min-width: 13rem;
-    max-width: 19rem;
+    max-width: 18.5rem;
     height: auto;
     aspect-ratio: 16/9;
     overflow: hidden;
@@ -50,12 +50,14 @@ body {
     position: fixed; 
     bottom: 0;       
     left: 0;      
-    height: 20%;   
+    height: 25%;   
     width: 100%;   
-    background-color: #bbbbbb; 
     padding: 10px;  
     z-index: 1000;
     cursor: none;
+    background-image: url("../resources/bottom_bar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .channel-image:hover {
