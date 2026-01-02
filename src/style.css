@@ -72,7 +72,7 @@ body {
     height: 25vh;   
     min-width: 100%;   
     
-    padding: 10px;  
+    padding: 10px 0;  
     z-index: 1000;
     
     background-image: url("../resources/bottom_bar.png");
@@ -82,6 +82,8 @@ body {
     
     overflow: hidden;
     cursor: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .channel-image:hover {
@@ -99,6 +101,7 @@ body {
     letter-spacing: 0.8rem;
     color: gray;
     font-weight: 500;
+    z-index: 1001;
 }
 
 .date {
@@ -110,4 +113,33 @@ body {
     font-size: 60px;
     color: gray;
     font-weight: 200;
+    z-index: 1001;
+}
+
+.left-bar {
+    
+    margin: 0;
+    padding: 0;
+    z-index: 1002;
+
+    width: 13rem;
+
+    background-image: url("../resources/left_bar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.right-bar {
+    
+    margin: 0;
+    padding: 0;
+    z-index: 1002;
+
+    width: 13rem;
+
+    background-image: url("../resources/right_bar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
