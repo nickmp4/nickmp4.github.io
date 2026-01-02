@@ -17,15 +17,19 @@ body {
 }
 
 .channel-container {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    width: 90%;
-    height: 70%;
+
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr)); /* always 4 columns */
+    gap: 0.75rem;
+
+    width: 86%;
+    padding-left: 7%;
+    padding-right: 7%;
+    max-height: 70vh;
+    
+    align-items: center;
+    justify-content: center;
     cursor: none;
 }
 
@@ -36,28 +40,34 @@ body {
 
 .channel-image {
     border-radius: 15px;
-    margin-top: .75rem;
-    min-width: 13rem;
-    max-width: 18.5rem;
-    height: auto;
+    width: 100%;
+    min-width: 100%;
+    max-width: 0%;
+
     aspect-ratio: 16/9;
-    overflow: hidden;
     border: .2rem solid gray;
+    box-sizing: border-box;
     cursor: none;
 }
 
 .info-bar {
     position: fixed; 
     bottom: 0;       
-    left: 0;      
-    height: 25%;   
-    width: 100%;   
+    left: 0;
+
+    height: 25vh;   
+    min-width: 100%;   
+    
     padding: 10px;  
     z-index: 1000;
-    cursor: none;
+    
     background-image: url("../resources/bottom_bar.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    
+    overflow: hidden;
+    cursor: none;
 }
 
 .channel-image:hover {
