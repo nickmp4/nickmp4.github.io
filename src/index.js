@@ -1,5 +1,7 @@
 const cursor = document.querySelector(".cursor")
-var span = document.getElementById('clock')
+var clock_span = document.getElementById('clock')
+var date_span = document.getElementById('date')
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 document.addEventListener("mousemove", (event)=> {
 
@@ -11,11 +13,16 @@ function time() {
     var d = new Date();
     var m = d.getMinutes();
     var h = d.getHours();
+    var date = d.getDate();
+    var month = d.getMonth();
+    var day = days[d.getDay()];
+    month++;
 
     m = checkTime(m);
     h = checkTime(h);
 
-    span.textContent = h + ":" + m;
+    clock_span.textContent = h + ":" + m;
+    date_span.textContent = day + " " + month + "/" + date;
 }
 
 function checkTime(i) {

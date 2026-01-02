@@ -9,6 +9,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "date-font";
+    src: url("../resources/arial_narrow_7.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: url("../resources/background.png");
 }
@@ -25,15 +32,15 @@ body {
 
 .channel-container {
 
-    margin-top: 2%;
+    margin-top: 4%;
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr)); /* always 4 columns */
     gap: 0.75rem;
 
-    width: 86%;
-    padding-left: 7%;
-    padding-right: 7%;
-    max-height: 70vh;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-height: 60vh;
     
     align-items: center;
     justify-content: center;
@@ -87,11 +94,20 @@ body {
     display: table;
     margin: auto;
     margin-top: -4vh;
-    text-align: center;
-    align-items: center;
     font-family: "clock-font";
     font-size: 110px;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.8rem;
     color: gray;
     font-weight: 500;
+}
+
+.date {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    font-family: "date-font";
+    font-size: 60px;
+    color: gray;
+    font-weight: 200;
 }
