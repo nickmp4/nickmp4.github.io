@@ -2,6 +2,13 @@
     cursor: none;
 }
 
+@font-face {
+    font-family: "clock-font";
+    src: url("../resources/digital_display_tfb.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: url("../resources/background.png");
 }
@@ -74,4 +81,17 @@ body {
     border-radius: 15px;
     border: .2rem solid #3bc0f4;
     cursor: none;
+}
+
+.clock {
+    display: table;
+    margin: auto;
+    margin-top: -4vh;
+    text-align: center;
+    align-items: center;
+    font-family: "clock-font";
+    font-size: 110px;
+    letter-spacing: 0.5rem;
+    color: gray;
+    font-weight: 500;
 }
