@@ -64,6 +64,19 @@ body {
     cursor: none;
 }
 
+.static-image {
+    border-radius: 15px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 0%;
+
+    aspect-ratio: 16/9;
+    border: .2rem solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    cursor: none;
+    opacity: 0.15;
+}
+
 .info-bar {
     position: fixed; 
     bottom: 0;       
@@ -95,6 +108,7 @@ body {
 .clock {
     display: table;
     margin: auto;
+    padding-left: 1vw;
     margin-top: -4vh;
     font-family: "clock-font";
     font-size: 110px;
