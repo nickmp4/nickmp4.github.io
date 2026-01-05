@@ -77,6 +77,50 @@ body {
     opacity: 0.15;
 }
 
+.message-box {
+    
+    height: 70vh;
+    width: auto;
+    background-image: url("../resources/background-3.png");
+    margin: 2% 5%;
+    border: .2rem solid gray;
+    border-radius: 15px;
+    
+}
+
+.message-textbox {
+
+    margin: 2% 2%;
+    line-height: 1.8;
+    background-color: transparent;
+    background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent calc(1.8em - 3px),
+    #ccc calc(1.8em - 3px),
+    #ccc 1.8em
+  );
+    text-align: left;
+    resize: none;
+    font-family: "date-font";
+    font-size: 20px;
+    color: #474747;
+    
+    height: 80%;
+    width: 95%;
+    border: none;
+    
+}
+
+.message-box-header {
+    width: 100%;
+    background-color: gray;
+    font-family: "date-font";
+    font-size: 48px;
+    color: rgb(219, 219, 219);
+    text-align: center;
+}
+
 .info-bar {
     position: fixed; 
     bottom: 0;       
@@ -92,6 +136,23 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    
+    overflow: hidden;
+    cursor: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-bar-clear {
+    position: fixed; 
+    bottom: 0;       
+    left: 0;
+
+    height: 25vh;   
+    min-width: 100%;   
+    
+    padding: 10px 0;  
+    z-index: 1000;
     
     overflow: hidden;
     cursor: none;
