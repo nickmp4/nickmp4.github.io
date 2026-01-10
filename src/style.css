@@ -91,6 +91,7 @@ body {
 .message-textbox {
 
     margin: 2% 2%;
+    margin-top: 0%;
     line-height: 1.8;
     background-color: transparent;
     background-image: repeating-linear-gradient(
@@ -103,10 +104,10 @@ body {
     text-align: left;
     resize: none;
     font-family: "date-font";
-    font-size: clamp(14px, 2.5vw, 20px);
+    font-size: clamp(12px, 2.2vw, 22px);
     color: #474747;
     
-    height: 80%;
+    height: 66%;
     width: 95%;
     border: none;
     overflow: hidden;
@@ -120,6 +121,23 @@ body {
     font-size: 48px;
     color: rgb(219, 219, 219);
     text-align: center;
+    
+}
+
+.sender-info {
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sender-picture {
+    height: 80%;
+    border: .05rem solid gray;
+    margin: 1vh;
+    margin-left: 15%;
+    width: auto;
+    aspect-ratio: 1/1;
+    
 }
 
 .info-bar {
