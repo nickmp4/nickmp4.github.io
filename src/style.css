@@ -149,7 +149,11 @@ body {
 }
 
 .resume-container {
-
+    justify-self: center;
+    min-width: 80vh;
+    max-width: 95vw;
+    width: 100%;
+    margin: auto auto;
 }
 
 .info-bar {
