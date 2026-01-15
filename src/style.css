@@ -115,6 +115,33 @@ body {
     
 }
 
+.message-textbox-small {
+
+    margin: 2% 2%;
+    margin-top: 0%;
+    line-height: 1.8;
+    background-color: transparent;
+    background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent calc(1.8em - 3px),
+    #ccc calc(1.8em - 3px),
+    #ccc 1.8em
+  );
+    text-align: left;
+    resize: none;
+    font-family: "date-font";
+    font-size: clamp(18px, 2.2vw, 22px);
+    color: #474747;
+    
+    height: 66%;
+    width: 95%;
+    border: none;
+    overflow: hidden;
+    cursor: none;
+    
+}
+
 .message-box-header {
     width: 100%;
     background-color: gray;
@@ -144,18 +171,21 @@ body {
 
 .qualifications-container {
     max-width: 95vw;
+    max-height: 75vh;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    
 }
 
 .resume-container {
     justify-self: center;
-    min-width: 80vh;
+    min-width: 40vw;
     max-width: 95vw;
-    width: 100%;
     margin: auto auto;
+    height: 90%;
 }
 
 .info-bar {
