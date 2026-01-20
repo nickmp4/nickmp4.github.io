@@ -133,7 +133,7 @@ body {
     text-align: left;
     resize: none;
     font-family: "date-font";
-    font-size: clamp(18px, 2.2vw, 22px);
+    font-size: clamp(18px, 2.2vw, 21px);
     color: #474747;
 
     border: none;
