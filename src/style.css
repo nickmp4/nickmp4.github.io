@@ -266,6 +266,13 @@ body {
     cursor: none;
 }
 
+.text {
+    font-family: "date-font";
+    font-size: 24px;
+    color: gray;
+    text-align: center;
+}
+
 .left-bar {
     
     margin: 0;
