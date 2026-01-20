@@ -121,6 +121,8 @@ body {
     margin-top: 0%;
     line-height: 1.8;
     background-color: transparent;
+    height: 66%;
+    width: 95%;
     background-image: repeating-linear-gradient(
     to bottom,
     transparent,
@@ -133,9 +135,7 @@ body {
     font-family: "date-font";
     font-size: clamp(18px, 2.2vw, 22px);
     color: #474747;
-    
-    height: 66%;
-    width: 95%;
+
     border: none;
     overflow: hidden;
     cursor: none;
@@ -150,6 +150,14 @@ body {
     color: rgb(219, 219, 219);
     text-align: center;
     cursor: none;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .sender-info {
@@ -170,14 +178,13 @@ body {
 }
 
 .qualifications-container {
-    max-width: 95vw;
+    max-width: 100vw;
     max-height: 75vh;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
 }
 
 .resume-container {
@@ -315,4 +322,12 @@ body {
 
 .button-right:hover, .button-left:hover {
     scale: 1.05;
+}
+
+hr {
+    margin: 0;
+    padding: 0ß;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
